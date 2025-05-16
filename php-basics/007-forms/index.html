@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Решение домашнего задания к занятию "Файлы, html формы"</title>
+</head>
+<body>
+  <h1>Задание 2: обрабатываем HTML-форму</h1>
+  <p><a href="https://github.com/netology-code/bphp-2-homeworks/blob/master/007-forms/exercise-02.md">Текст задания</a></p>
+  <form enctype="multipart/form-data" action="upload.php" method="POST">
+    <p>
+      <label>С каким именем сохранить файл на сервере?<br>
+        <input name="file_name" type="text">
+      </label>
+    </p>
+    <p>
+      <label>Выберите файл:<br>
+        <input name="content" type="file">
+      </label>
+    </p>
+    <p>
+      <input type="submit" value="Отправить файл">
+  </form>
+</body>
