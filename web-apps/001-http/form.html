@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Решение домашнего задания к занятию "HTTP и современный Web"</title>
+</head>
+<body>
+	<h1>Домашнее задание по теме "Формы и форматы передачи данных"</h1>
+	<p><a href="https://github.com/netology-code/bweb-homeworks/tree/main/1.%20HTTP">Текст задания</a></p>
+	<form action="dadata.php" method="POST">
+		<p><label for="user_name">Имя</label><br>
+		<input type="text" id="user_name" name="user_name" required><br></p>
+
+		<p><label for="user_second_name">Отчество</label><br>
+		<input type="text" id="user_second_name" name="user_second_name" required><br></p>
+
+		<p><label for="user_last_name">Фамилия</label><br>
+		<input type="text" id="user_last_name" name="user_last_name" required><br></p>
+
+		<input type="hidden" name="api_token" value="5c970ec3cd8793e7ce6f7ceb704c1e4eea4b26da">
+		<input type="hidden" name="secret_key" value="1f84e0397bca0a9dc72b21087842300b60e8fe13">
+
+		<p><button type="submit" name="submit">Отправить</button></p>
+	</form>
+</body>
+</html>
